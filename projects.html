@@ -4,21 +4,71 @@
     <title>My Projects</title>
     <style>
         body {
-            font-family: Arial;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
-        header {
-            background: #333;
-            color: white;
-            padding: 15px;
+
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
         }
-        .project {
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
             background: white;
-            margin: 20px auto;
+            width: 250px;
             padding: 15px;
-            width: 300px;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -26,22 +76,37 @@
 
 <header>
     <h1>My Projects</h1>
+    <p>Here are some of my works</p>
 </header>
 
-<div class="project">
-    <h3>Telemedicine Website</h3>
-    <p>A platform for online doctor consultation and prescriptions.</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about/contact-us.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Telemedicine Website</h3>
+        <p>A platform for online doctor consultation and prescription management.</p>
+    </div>
+
+    <div class="card">
+        <h3>Student Portal</h3>
+        <p>A system to manage student records, attendance, and results efficiently.</p>
+    </div>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This website showcases my skills, projects, and contact information.</p>
+    </div>
+
 </div>
 
-<div class="project">
-    <h3>Student Portal</h3>
-    <p>A system to manage student records and results.</p>
-</div>
-
-<div class="project">
-    <h3>Portfolio Website</h3>
-    <p>This website showcasing my skills and projects.</p>
-</div>
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
 
 </body>
 </html>
