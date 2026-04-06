@@ -3,80 +3,104 @@
 <head>
     <title>My Projects</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
-            background: #f4f6f8;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
         }
 
         header {
-            background: #222;
-            color: white;
-            padding: 20px;
             text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            opacity: 0.8;
         }
 
         nav {
-            background: #444;
-            padding: 10px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: white;
-            width: 250px;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: 0.3s;
         }
 
+        nav a:hover {
+            color: #00e6ff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: 0.4s;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px) scale(1.02);
+            background: rgba(255,255,255,0.2);
         }
 
         .card h3 {
-            margin-top: 0;
-            color: #333;
+            margin-bottom: 10px;
+            font-size: 22px;
         }
 
         .card p {
-            color: #555;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #00e6ff;
+            color: black;
+            border-radius: 5px;
+            font-size: 12px;
         }
 
         footer {
             text-align: center;
-            padding: 15px;
-            background: #222;
-            color: white;
+            padding: 20px;
             margin-top: 20px;
+            background: rgba(0,0,0,0.3);
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>My Projects</h1>
-    <p>Here are some of my works</p>
+    <h1>🚀 My Projects</h1>
+    <p>Creative work and development projects</p>
 </header>
 
 <nav>
@@ -88,24 +112,27 @@
 <div class="container">
 
     <div class="card">
-        <h3>Telemedicine Website</h3>
-        <p>A platform for online doctor consultation and prescription management.</p>
+        <h3>💙 Telemedicine Website</h3>
+        <p>A smart platform for remote doctor consultations, prescriptions, and patient management.</p>
+        <span class="badge">Web App</span>
     </div>
 
     <div class="card">
-        <h3>Student Portal</h3>
-        <p>A system to manage student records, attendance, and results efficiently.</p>
+        <h3>🎓 Student Portal</h3>
+        <p>A complete system to manage student records, attendance, and academic performance.</p>
+        <span class="badge">Management System</span>
     </div>
 
     <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>This website showcases my skills, projects, and contact information.</p>
+        <h3>🌐 Portfolio Website</h3>
+        <p>This website highlights my skills, projects, and provides a way to connect with me.</p>
+        <span class="badge">Personal</span>
     </div>
 
 </div>
 
 <footer>
-    <p>© 2026 My Portfolio</p>
+    <p>© 2026 | Designed by Sneha</p>
 </footer>
 
 </body>
